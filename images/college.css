@@ -1,0 +1,65 @@
+*{
+    background-image: url('pastel\ colors.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-family: cursive;
+    text-align: center;
+    color: rgb(111, 178, 246);
+    font-size: 80px;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: hsl(123, 67%, 20%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown button:hover{
+    background-color:rgb(130, 130, 207);
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: goldenrod;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+    cursor: pointer;
+}
+.dropdown:hover button{
+    background-color: rgb(130, 130, 207);
+}
+.dropdown a:hover{
+    background-color: rgb(130, 130, 207);
+}
+.details
+{
+    text-align: center;
+    font-size: x-large;
+    padding-right: 3rem;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.cls button{
+    border-radius: 10%;
+    height: 70px;
+    width: 120px;
+    color: black;
+    border-color: black;
+}
