@@ -1,0 +1,18 @@
+img {
+    height: 10em;
+    width: 40%;
+    padding-left: 500px;
+    background-color: black;
+}
+
+div {
+    background-color: black;
+}
+
+form {
+    font-size: large;
+}
+
+button:hover {
+    cursor: pointer;
+}

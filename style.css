@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+:root {
+    --main-color: #fff;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+    background-color: #ebc3c3;
+}
+
+body {
+    background-color: #fff;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #be6c6c;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.btn {
+    text-decoration: underline;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #fff;
+    color: rgb(11, 11, 72);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: var(--main-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: #ebc3c3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #be6c6c;
+    font-size: 2.5rem;
+}
+
+.header .logo:hover {
+    color: black;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #be6c6c;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: black;
+}
+
+#menu-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3 {
+    color: #be6c6c;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.home .home-slider .swiper-slide {
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 45rem;
+    width: 32rem;
+}
+
+.home .home-slider .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+
+.service .box-container .box {
+    border-radius: .5rem;
+    background: #ebc3c3;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.service .box-container .box i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--main-color);
+    color: #ebc3c3;
+}
+
+.service .box-container .box h3 {
+    font-size: 2rem;
+    color: #110c41;
+    font-family: cursive;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p {
+    font-size: 1.4rem;
+    color: #110c41;
+    line-height: 1.8;
+    font-weight: bolder;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    border-style: solid;
+    border-color: #ebc3c3;
+    border-width: 7px;
+    padding: 15px 15px;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: #be6c6c;
+}
+
+.about .row .content p {
+    font-size: 1.7rem;
+    color: #43185b;
+    padding: 1rem 0;
+    line-height: 2;
+    font-weight: 900;
+    font-family: Georgia;
+}
+
+.price .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.price .box-container .box {
+    padding: 2rem 0;
+    background: #ebc3c3;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box:hover {
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title {
+    background: #ebc3c3;
+    color: rgb(27, 27, 54);
+    padding: 1.5rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.price .box-container .box .amount {
+    color: rgb(11, 11, 72);
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.price .box-container .box ul {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li {
+    font-size: 1.5rem;
+    color: rgb(11, 11, 72);
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li i {
+    color: var(--main-color);
+    padding-right: .5rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    background: #ebc3c3;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    color: #1e1c1c;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+    color: #101010;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1em;
+    font-family: gill sans;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+    background: #444;
+}
+
+.contact form .inputBox input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.footer {
+    text-align: center;
+    border-top: .2rem solid #be6c6c;
+    background: #fff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #be6c6c;
+}
+
+.footer .box-container .box a {
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #be6c6c;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #be6c6c;
+}
+
+.footer .box-container .box a:hover i {
+    color: #be6c6c;
+}
+
+.footer .box-container .box i {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid #be6c6c;
+    color: #be6c6c;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.footer .credit h4 {
+    color: #be6c6c;
+    font-family: cursive;
+}
+
+nav {
+    font-weight: bolder;
+}
+
+button {
+    cursor: pointer;
+    padding: 1rem;
+    color: #be6c6c;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+    position: relative;
+    border-color: #be6c6c;
+    border-style: solid;
+    background-color: #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.reviewers {
+    height: 100px;
+    width: 100px;
+    padding-left: 40px;
+}
+
+.reviews {
+    display: flex;
+}
+
+.reviews p {
+    font-size: large;
+    padding-left: 30px;
+    font-weight: 200;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+/* media queries  */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-bars {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid #222;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar a {
+        display: flex;
+        background: #222;
+        border-radius: .5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .home-slider .swiper-slide {
+        width: 27rem;
+    }
+
+    .contact form .inputBox input {
+        width: 100%;
+    }
+}
